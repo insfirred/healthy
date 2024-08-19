@@ -1,23 +1,20 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'challenge.dart';
+part of 'appointment.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Challenge _$ChallengeFromJson(Map<String, dynamic> json) => Challenge(
+Appointment _$AppointmentFromJson(Map<String, dynamic> json) => Appointment(
       id: json['id'] as String,
       name: json['name'] as String,
       imageUrl: json['imageUrl'] as String,
-      totalSteps: (json['totalSteps'] as num).toInt(),
-      stepsCompleted: (json['stepsCompleted'] as num).toInt(),
     );
 
-Map<String, dynamic> _$ChallengeToJson(Challenge instance) => <String, dynamic>{
+Map<String, dynamic> _$AppointmentToJson(Appointment instance) =>
+    <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'imageUrl': instance.imageUrl,
-      'totalSteps': instance.totalSteps,
-      'stepsCompleted': instance.stepsCompleted,
     };

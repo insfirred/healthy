@@ -8,6 +8,7 @@ part 'assessment.g.dart';
 class Assessment {
   final String id;
   final String name;
+  final String description;
   final String imageUrl;
   final String workoutImageUrl;
   final int durationInSec;
@@ -18,6 +19,7 @@ class Assessment {
   const Assessment({
     required this.id,
     required this.name,
+    required this.description,
     required this.imageUrl,
     required this.workoutImageUrl,
     required this.durationInSec,

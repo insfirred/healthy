@@ -9,6 +9,7 @@ part of 'assessment.dart';
 Assessment _$AssessmentFromJson(Map<String, dynamic> json) => Assessment(
       id: json['id'] as String,
       name: json['name'] as String,
+      description: json['description'] as String,
       imageUrl: json['imageUrl'] as String,
       workoutImageUrl: json['workoutImageUrl'] as String,
       durationInSec: (json['durationInSec'] as num).toInt(),
@@ -26,10 +27,11 @@ Map<String, dynamic> _$AssessmentToJson(Assessment instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
+      'description': instance.description,
       'imageUrl': instance.imageUrl,
       'workoutImageUrl': instance.workoutImageUrl,
       'durationInSec': instance.durationInSec,
-      'resources': instance.resources,
+      'resources': instance.resources.map((e) => e.toJson()).toList(),
       'prerequisites': instance.prerequisites,
       'benefits': instance.benefits,
     };

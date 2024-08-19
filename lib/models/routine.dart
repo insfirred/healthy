@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../enums/difficulty.dart';
+import '../constants/enums.dart';
 
 part 'routine.g.dart';
 
@@ -8,6 +8,7 @@ part 'routine.g.dart';
 class Routine {
   final String id;
   final String name;
+  final String imageUrl;
   final String type;
   final List<String> tags;
   final Difficulty difficulty;
@@ -15,6 +16,7 @@ class Routine {
   const Routine({
     required this.id,
     required this.name,
+    required this.imageUrl,
     required this.type,
     required this.tags,
     required this.difficulty,

@@ -6,12 +6,14 @@ part 'challenge.g.dart';
 class Challenge {
   final String id;
   final String name;
+  final String imageUrl;
   final int totalSteps;
   final int stepsCompleted;
 
   const Challenge({
     required this.id,
     required this.name,
+    required this.imageUrl,
     required this.totalSteps,
     required this.stepsCompleted,
   });

@@ -9,6 +9,7 @@ part of 'routine.dart';
 Routine _$RoutineFromJson(Map<String, dynamic> json) => Routine(
       id: json['id'] as String,
       name: json['name'] as String,
+      imageUrl: json['imageUrl'] as String,
       type: json['type'] as String,
       tags: (json['tags'] as List<dynamic>).map((e) => e as String).toList(),
       difficulty: $enumDecode(_$DifficultyEnumMap, json['difficulty']),
@@ -17,6 +18,7 @@ Routine _$RoutineFromJson(Map<String, dynamic> json) => Routine(
 Map<String, dynamic> _$RoutineToJson(Routine instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
+      'imageUrl': instance.imageUrl,
       'type': instance.type,
       'tags': instance.tags,
       'difficulty': _$DifficultyEnumMap[instance.difficulty]!,

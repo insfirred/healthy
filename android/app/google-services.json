@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "141019145961",
+    "project_id": "rootally-task-d7090",
+    "storage_bucket": "rootally-task-d7090.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141019145961:android:543ceaabd4e3e710333278",
+        "android_client_info": {
+          "package_name": "com.example.healthy_life"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvuNG7GvCPKc2aLQ_ePEOylsdsweohnoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
